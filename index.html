@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css"> 
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <div class="text-card">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </div>
+
+  <div class="app-card">
+    <div class="views-div">
+      <div class="views-output" id="views-output">100K</div>
+      <div class="views"> PAGEVIEWS</div>
+    </div>
+    <div class="slide-container">
+      <input type="range" class="slider" id="slider" name="slider" 
+             min="0" max="40" value="20" step="10">
+    </div>
+    
+    <div class="billing-div">
+      <div class="billing-output" id="billing-output">$16.00</div> 
+      <div class="month">/month</div>
+    </div>
+    <div class="selector">
+      <div class="selector-text">Monthly Billing</div>
+      <label class="switch">
+        <input type="checkbox" id="checkbox" onchange="toggleButton()">
+        <span class="slider-round"></span>
+      </label>
+      <div class="selector-text">Yearly Billing</div>
+      <div class="discount-icon">-25%</div>
+    </div>
+  </div>
+
+  <div class="final-card">
+    <div class="final-text-line">
+      <div class="icon-check"></div><p class="final-text">Unlimited websites</p>
+    </div>
+    <div class="final-text-line">
+      <div class="icon-check"></div><p class="final-text">100% data ownership</p>
+    </div>
+    <div class="final-text-line">
+      <div class="icon-check"></div><p class="final-text">Email reports</p>
+    </div>
+   
+    <button class="trial">Start my trial</button>
+  </div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
